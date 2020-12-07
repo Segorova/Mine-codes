@@ -1,0 +1,10 @@
+function factorial(n){
+let pow = 1;
+let i = 1;
+ while (i <= n) {
+   pow = pow * i;
+   i++;
+ }  
+ return pow;
+}
+console.log(factorial(8));
