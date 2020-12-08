@@ -1,0 +1,9 @@
+function numberOfDigits(n){
+let i = 0;
+  while (n !== 0) { 
+    n = Math.trunc(n / 10);
+    i++;
+}
+ return i;
+}
+console.log(numberOfDigits(10123));   //  5
