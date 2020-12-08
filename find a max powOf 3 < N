@@ -1,0 +1,9 @@
+function powOf3(n){
+  let i = 0;
+  let res = 0;
+  while (res < n) {
+   res = Math.pow(3, i); 
+   i++;
+  }
+  return i-2;
+}
