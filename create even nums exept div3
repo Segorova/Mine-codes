@@ -1,0 +1,15 @@
+function fillArray(n){
+ let arr = []
+ let a = 0
+ for (let i = 0; i < n; i++) {
+  a += 2
+  if(a > n)  break;
+   if (a % 3 === 0) {
+    i -=1
+   continue; 
+    } 
+  arr[i] = a
+  }
+  return arr
+}
+console.log(fillArray(10));  /*2.4.8.10 - кроме 6*/
