@@ -1,0 +1,11 @@
+function squaresNeeded(grains){
+   if (grains === 0) return 0
+ if (grains === 1) return 1
+  if (grains === 2) return 2
+  var sum = 0;
+  for (var i = 0; i <= 64; i++) {
+    sum = sum + Math.pow(2, i - 1)
+    if (sum > grains) break;
+  }
+ return i;  
+}
