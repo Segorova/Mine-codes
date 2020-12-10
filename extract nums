@@ -1,0 +1,8 @@
+function y(value) {
+  let num = ''
+  for (let i = 0; i < value.length; i++) {
+    if (!isNaN(value[i]))  num +=value[i]
+  }
+  return +num
+}
+  console.log(y('yy6hhh7hhh8jj'));
