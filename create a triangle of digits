@@ -1,0 +1,15 @@
+function numericalTriangle(n){
+  let str = ''
+  let count = 0
+  for (let i = 1; i <= n; i++) {
+    while (count < i-1) {
+     str +=i+' '
+     count++
+    }
+     str +=i
+    if (i !== n) str +='\n'
+    count = 0;  
+  } 
+  return (str)
+}
+  console.log(numericalTriangle(9));
