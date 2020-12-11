@@ -1,0 +1,15 @@
+function numericalTable(n, m){
+  let str = ''
+  let count = 0
+  for (let i = 1; i <= n; i++) {
+    while (count < m - 1 ) {
+      str += i + ' '
+      count++
+    }
+  if (i !== n) str += i + '\n'
+  else str += i
+    count = 0
+  } 
+  return (str)
+}
+  console.log(numericalTable(5, 1));
