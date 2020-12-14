@@ -1,0 +1,14 @@
+function starTriangle(n){
+  let str = ''
+  let count = 0
+  for (let i = 1; i <= n; i++) {
+    while (count < i-1) {
+     str +='*'
+     count++
+    }
+     str +='*'
+    if (i !== n) str +='\n'
+    count = 0;  
+  } 
+  return (str)
+}
