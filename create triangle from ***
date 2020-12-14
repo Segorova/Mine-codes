@@ -1,0 +1,15 @@
+function upsideDown(n){
+let str = ''
+  let count = 0
+  
+  for (let i = n; i >= 1; i--) {
+    while (count < i-1) {
+     str +='*'
+     count++
+    }
+     if (i === 1) str +='*'
+     else str +='*\n'
+    count = 0;  
+  } 
+  return (str)
+}
