@@ -1,0 +1,10 @@
+function sumsInArray(arr){
+ let sum = []
+ for (let i = 0; i < arr.length; i++) {
+   sum[i] = 0
+    for (let j = 0; j < arr[i].length; j++) {
+      sum[i] += arr[i][j]
+ }} 
+   return (sum)
+}
+  console.log(sumsInArray([[1, 0, 0], [2, 2]]));
