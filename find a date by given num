@@ -1,0 +1,26 @@
+function getDay(day, isLeap){  if (day > 366 || day <= 0 || day === 366 && isLeap === false) return "wrong day";  
+let days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+if (isLeap) days[1] = 29;
+let s = 0;
+let i = 0;
+while (s < day) {
+ s +=days[i];
+i++;
+}
+let d = day - (s - days[i - 1]);
+let month = i-1;
+switch(month) {
+ case 0: return `January, ${d}`;    
+ case 1: return `February, ${d}`;    
+ case 2: return `March, ${d}`;    
+ case 3: return `April, ${d}`;    
+ case 4: return `May, ${d}`;    
+ case 5: return `June, ${d}`;    
+ case 6: return `July, ${d}`;    
+ case 7: return `August, ${d}`;    
+ case 8: return `September, ${d}`;
+ case 9: return `October, ${d}`;    
+ case 10: return `November, ${d}`;
+ case 11: return `December, ${d}`;
+ }
+} 
