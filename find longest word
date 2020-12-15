@@ -1,0 +1,10 @@
+function theLongestWord(arr){
+let max = arr[0].length, word= arr[0]
+ for (let el of arr) { 
+    if(el.length > max) {
+    max = el.length
+    word = el
+    }
+}
+  return word
+}
