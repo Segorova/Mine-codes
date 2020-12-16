@@ -1,0 +1,11 @@
+function mostExpensiveCar(arr){
+  let max = arr[0][1], res= arr[0][0]
+   for (let i = 0; i < arr.length; i++) { 
+      if (arr[i][1] > max) {
+        max = arr[i][1]
+        res = arr[i][0]
+      }
+   }     
+  return res
+}
+console.log(mostExpensiveCar([["Honda", 18500], ["Toyota", 21200], ["BMW", 19900]]));
