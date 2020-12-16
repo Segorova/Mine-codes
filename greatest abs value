@@ -1,0 +1,12 @@
+function theLongestWord(arr){
+  let max = Math.abs(arr[0]), res
+
+    for (let el of arr) { 
+      if(Math.abs(el) > max) {
+      max = Math.abs(el)
+      res = el
+    }
+      }
+  return res
+}
+console.log(theLongestWord([3, 7, -8, 1]));
