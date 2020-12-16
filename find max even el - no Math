@@ -1,0 +1,15 @@
+function maxEven(arr){
+  let res
+    for (let el of arr) { 
+      if(el % 2 === 0) {
+      res = el
+    }}
+    for (let el of arr) { 
+      if(el % 2 === 0 && el > res) {
+      res = el
+    }  
+      }
+  return res
+
+}
+console.log(maxEven([3, 4, 8, 17]));
