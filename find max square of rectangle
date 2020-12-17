@@ -1,0 +1,4 @@
+function maxRectangleSquare(arr){
+return (arr.length === 0) ? null : Math.max(...arr.map((el, i) => el[0] * el[1]))
+}
+console.log(maxRectangleSquare([[3, 4], [8, 1], [2, 3]]));
