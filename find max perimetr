@@ -1,0 +1,4 @@
+function maxRectanglePerimeter(arr){
+return (arr.length === 0) ? null : Math.max(...arr.map((el, i) => (el[0] + el[1])*2))
+}
+console.log(maxRectanglePerimeter([[2, 3], [5, 6], [2, 7]]));
