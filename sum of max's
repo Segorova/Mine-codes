@@ -1,0 +1,18 @@
+function sumOfTwoLargest(a, b, c){
+  let secondLargest = 0;
+  
+ if (Math.max(a, b, c) === a && b > c) secondLargest = b;
+  else if (Math.max(a, b, c) === a && b < c) secondLargest = c;
+  
+ if (Math.max(a, b, c) === b && a > c) secondLargest = a;
+  else if(Math.max(a, b, c) === b && a < c) secondLargest = c;
+  
+  
+  if (Math.max(a, b, c) === c && a > b) secondLargest = a;
+  else if (Math.max(a, b, c) === c && a < b) secondLargest = b;
+  
+  
+  return Math.max(a, b, c) + secondLargest;
+}
+
+console.log(sumOfTwoLargest(5, 14, 9));
