@@ -1,0 +1,15 @@
+function distanceComparison(x1, y1, x2, y2){
+  
+  let ox1 = Math.abs(Math.sqrt(Math.pow(x1, 2) + Math.pow(y1, 2)));
+  let ox2 = Math.abs(Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2)));
+  
+  console.log(ox1, ox2);
+  
+   if (ox1 < ox2) return 1;
+  
+   else if (ox1 > ox2) return 2;
+   else if (ox1 = ox2) return 0;
+   
+}
+
+  console.log(distanceComparison (3, 4, 3, 0));
