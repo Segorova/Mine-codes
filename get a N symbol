@@ -1,0 +1,3 @@
+function getCharacter(str, n){
+return (str.length > n && n >= 0) ? `${str[n]}`: "Error"
+}
