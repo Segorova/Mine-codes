@@ -1,0 +1,8 @@
+function luckyChineseNumber(numbers){
+  let res = []
+  let str = numbers.map(el => String(el))
+  for (let i = 0; i < numbers.length; i++) {
+    if (str[i].includes('8')) res.push(str[i])
+  }
+return  res.map(el => +el)
+}
