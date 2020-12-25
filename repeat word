@@ -1,0 +1,4 @@
+function repeatWord(word){
+let n = word.length
+return (word + ' ').repeat(n).trimRight()
+}
