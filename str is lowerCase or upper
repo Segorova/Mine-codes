@@ -1,0 +1,3 @@
+function lowerOrUpperCase(letter){
+return (letter.toLowerCase() === letter) ? "The letter is in Lowercase" : "The letter is in Uppercase"
+}
