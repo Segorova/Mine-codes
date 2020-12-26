@@ -1,0 +1,13 @@
+function isPalindrome(str){
+ let arr = [], arr2 = []
+   for (let i = 0; i < str.length; i++) {
+     if (str[i] !== ' ') arr.push(str[i])
+   }
+   for (let j = arr.length-1; j >= 0; j--) {
+     arr2.push(arr[j])
+   }
+  return arr.join('') === arr2.join('')
+}
+console.log(isPalindrome('pull up if i pull up'));
+
+                                        //  true
