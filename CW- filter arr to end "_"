@@ -1,0 +1,3 @@
+function searchNames( logins ){
+   return logins.filter((el, i) => logins[i][0].endsWith('_'))
+}
