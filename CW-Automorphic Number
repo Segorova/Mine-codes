@@ -1,0 +1,4 @@
+function automorphic(n){
+ let arr = [`${n}`, `${Math.pow(n, 2)}`]
+ return arr[1].endsWith(arr[0]) ? "Automorphic" : "Not!!"
+}
