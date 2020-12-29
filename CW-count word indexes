@@ -1,0 +1,8 @@
+function wordsToMarks(string){
+let str = 'abcdefghijklmnopqrstuvwxyz'
+let res = 0
+for (let el of string) {
+  res += str.indexOf(el)+1
+}
+return res
+}
