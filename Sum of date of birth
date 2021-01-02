@@ -1,0 +1,9 @@
+function magicNumber(date){
+let temp = 0
+let res = date.replace(/[/]/g, '').split('').reduce((acc, el) => +acc + +el)
+  while (res > 9) {
+    res = Math.floor(res / 10) + res % 10
+    console.log(res);
+  }
+return res
+}
