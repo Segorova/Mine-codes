@@ -1,0 +1,6 @@
+function remove(s){
+ for (let el of s) {
+   if (s.endsWith('!')) s = s.slice(0, -1)
+ }
+  return s
+}
