@@ -1,0 +1,14 @@
+function correctPolishLetters (string) {
+string = string.replace (/[\ą\ć\ę\ł\ń\ó\ś\ź\ż]/g, function(a){
+   if (a == 'ą') return 'a'
+   if (a == 'ć') return 'c'
+   if (a == 'ę') return 'e'
+   if (a == 'ł') return'l'
+   if (a == 'ń') return 'n'
+   if (a == 'ó') return 'o'
+   if (a == 'ś') return 's'
+   if (a == 'ź') return 'z'
+   if (a == 'ż') return 'z'
+ })
+  return string
+}
