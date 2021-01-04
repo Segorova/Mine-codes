@@ -1,0 +1,24 @@
+var palindromeChainLength = function(n) {
+ let count = 0, res = 0, mirr = 0
+ let arr = String(n).split('')
+ let arr2 = +arr.slice().reverse().join('')
+ let ab = +arr.join('')
+ let ba = arr2
+ 
+   if (ab === ba) return 0
+   else 
+     do {
+      count++
+      res = String(ab + ba).split('')
+      mirr = res.slice().reverse()
+       ab = +res.join('')
+       ba = +mirr.join('')
+    } while (ab !== ba)
+
+      return count
+    }
+
+console.log(palindromeChainLength(89));
+                     
+
+                // ["8", "7"]    ["7", "8"]    4
