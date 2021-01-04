@@ -1,0 +1,5 @@
+var isAnagram = function(test, original) {
+ let x = test.toLowerCase().split('').sort().join('')
+ let y = original.toLowerCase().split('').sort().join('')
+ return (x === y) ? true : false
+ };
