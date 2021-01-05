@@ -1,0 +1,7 @@
+function product(str){
+  let a = 0, b = 0
+     for (let el of str) {
+       el === '!'? a++ : b++
+     }
+ return a * b
+}
