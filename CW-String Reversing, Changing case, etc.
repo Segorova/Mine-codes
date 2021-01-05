@@ -1,0 +1,10 @@
+function reverseAndMirror(s1,s2) {
+
+  function changeCase(a){
+    return a.split('').map(el => el === el.toLowerCase() ? el.toUpperCase() : el.toLowerCase())
+    }
+  let el1 = changeCase(s2).reverse()
+  let el2 = changeCase(s1).reverse()
+
+  return el1.join('') + '@@@' + el2.join('') + el2.reverse().join('');
+} 
