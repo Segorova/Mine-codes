@@ -1,0 +1,11 @@
+function digits(num){
+let arr = String(num).split('').map(el => +el)
+let res = []
+for (let i = 0; i < arr.length; i+=0) {
+  for (let j = 1; j < arr.length; j++) {
+  res.push(arr[i] + arr[j])
+}
+ arr.shift()
+}
+return res
+}
