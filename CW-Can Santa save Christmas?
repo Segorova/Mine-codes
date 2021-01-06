@@ -1,0 +1,20 @@
+function determineTime(durations){
+ let hours = [], min = [], sec = []
+   if (durations.length === 0) return true
+   for (let i = 0; i < durations.length; i++) {
+     hours.push((durations[i][0]+durations[i][1])*1)
+     min.push((durations[i][3]+durations[i][4])*1)
+     sec.push((durations[i][6]+durations[i][7])*1)
+   }
+  hours = hours.reduce((acc, el) => acc + el)
+  min = min.reduce((acc, el) => acc + el)
+  sec = sec.reduce((acc, el) => acc + el)
+  
+  if (sec >= 60) min++
+  if (min > 59) {
+   let n = Math.round(min/60)
+   min = min % 60
+   hours += n
+  }
+  return hours === 24 && min > 0 || hours > 24 ? false: true
+}
