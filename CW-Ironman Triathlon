@@ -1,0 +1,9 @@
+function iTri(s){
+  if (s === 0) return 'Starting Line... Good Luck!';
+  if (s >= 140.6) return "You're done! Stop running!";
+ let obj ={
+    type : (s < 2.4) ? 'Swim' : (s < 112) ? 'Bike' : 'Run',
+    distance : (2.4 + 112 + 26.2 - s).toFixed(2) + ' to go!',
+  }
+return (s > 130.6) ? {'Run':'Nearly there!'}:{[obj.type]:obj.distance}
+}
