@@ -1,0 +1,8 @@
+function duckDuckGoose(players, goose) {
+     if (Object.keys(players).length < goose) {       
+       do {
+          goose = goose - Object.keys(players).length
+       } while (Object.keys(players).length < goose)
+      }        
+  return players[goose-1].name
+}
