@@ -1,0 +1,17 @@
+var max = {
+   name: 'Max Headroom'
+  }
+
+ function getMax1(){
+ let a = max
+  return a;
+}
+
+function getMax2(){
+  let b = max
+  return b
+}
+
+
+
+getMax1=getMax2=_=>({name:'Max Headroom'})
