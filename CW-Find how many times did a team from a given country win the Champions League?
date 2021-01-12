@@ -1,0 +1,7 @@
+function countWins(winnerList, country) {
+let count = 0
+for (let el of winnerList) {
+  if (el['country'] === country) count++
+}
+return count
+}
