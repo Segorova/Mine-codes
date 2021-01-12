@@ -1,0 +1,9 @@
+function countWords(str){
+let arr = str.toLowerCase().split(' ')
+let obj = {}
+for (let el of arr ) {
+  if (el in obj) obj[el]++
+  else obj[el] = 1
+}
+return obj
+}
