@@ -1,0 +1,8 @@
+function createDict(keys, values){
+let obj = {}
+   for (let i = 0; i < keys.length; i++){
+      (values[i] === undefined) ? obj[keys[i]] = null: obj[keys[i]] = values[i]
+  
+}
+  return obj
+}
