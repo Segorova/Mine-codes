@@ -6,3 +6,8 @@ let count = 0
  
   return count
 }
+
+
+function countDevelopers(list) {
+  return list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length
+}
