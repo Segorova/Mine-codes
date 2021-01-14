@@ -1,0 +1,17 @@
+function numObj(s){
+  let res = []
+  for (let i = 0; i < s.length; i++){
+    s[i] = String(s[i])
+    let obj = {}
+    obj[s[i]] = String.fromCharCode(s[i])
+    res.push(obj)
+  }  
+  return res
+}
+
+
+function numObj(s){
+  return s.map(n => {
+    return { [n]: String.fromCharCode(n) };
+  });
+}
