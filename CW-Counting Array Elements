@@ -1,0 +1,8 @@
+function count(array){
+let res ={}
+for (let el of array){
+  if (el in res) res[el]++
+  else res[el] = 1
+}
+  return res
+}
