@@ -1,0 +1,43 @@
+function solve(st) {
+  let values = [], letters = [], max = 0, obj = {}, res =0
+   let arr = st.split('')
+     for (let i = 0; i < arr.length; i++){
+        obj[arr[i]] = arr.lastIndexOf(arr[i]) - arr.indexOf(arr[i])
+        if (obj[arr[i]] > max) max = obj[arr[i]]
+     }
+  letters = Object.entries(obj).sort()
+     for (let i = 0; i < letters.length; i++){
+       if (+letters[i][1] === max) {
+         res = letters[i][0]
+         break
+       }
+     }
+   return res
+}
+
+function solve(str) {
+  let maxDiff = 0, result = 'z';
+  for (let el of str) {
+    let diff = str.lastIndexOf(el) - str.indexOf(el);
+      if (maxDiff < diff || maxDiff == diff && el <= result) {
+        result = el;
+        maxDiff = diff;
+      }
+    }
+  return result;
+}
+
+function solve(st) {
+  let obj = {};
+  for (let i = 0; i < st.length; i++) {
+    obj[st[i]] = st.lastIndexOf(st[i]) - st.indexOf(st[i]);
+  }
+  let arr1 = Object.values(obj);
+  let v = Math.max(...arr1);
+  let arr2 = [];
+  for (let key in obj){
+    if (obj[key] === v) arr2.push(key);
+  }
+  let arr3 = arr2.sort();
+  return arr3[0];
+}
