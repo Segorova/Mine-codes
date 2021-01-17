@@ -1,0 +1,11 @@
+function daysRepresented(trips){
+   let arr =[]
+     for (let i = 0; i < trips.length; i++){
+       for (let j = 0; j < trips[i].length; j++){
+         for (let k = trips[i][j]; k <= trips[i][j+1]; k++){
+           if (!arr.includes(k)) arr.push(k)
+         }
+        }
+      }
+ return arr.length
+  }
