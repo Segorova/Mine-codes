@@ -1,0 +1,12 @@
+function nameScore(name){
+// let alpha = { ETRPV: 8, AHGIZ: 4, NUKWB: 3, MDQYX: 9, FSLCJ: 7 }
+  let res = {}
+  res[name] = 0
+  let str = name.toUpperCase()
+ for (let i = 0; i < str.length; i++){
+       for (let key in alpha) {
+         if (key.includes(str[i])) res[name] += alpha[key]       
+       }
+ }
+  return res
+}
