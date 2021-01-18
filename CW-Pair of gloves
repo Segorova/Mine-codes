@@ -1,0 +1,28 @@
+function numberOfPairs(gloves){
+let obj = {}, arr = []
+   for (let i = 0; i < gloves.length; i++){
+     if (gloves[i] in obj) obj[gloves[i]]++
+     else obj[gloves[i]] = 1
+   }
+  arr = Object.values(obj).map(el => Math.trunc(el/2)).reduce((acc, el) => acc+el)
+  return arr
+  }
+  
+  
+  
+  
+  const numberOfPairs=gloves=>(gloves.sort().join().match(/(\w+),\1/g)||[]).length
+  
+  
+  function numberOfPairs(gloves)
+{
+  gloves.sort();
+  var count=0;
+  for (var i=0; i<gloves.length; i++)
+    if (gloves[i]==gloves[i+1])
+    {
+      count++;
+      i++;
+    }
+  return count
+}
