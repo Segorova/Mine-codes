@@ -1,0 +1,28 @@
+function myLanguages(results) {
+  let obj = {}
+  let arr = [], res = []
+  for (let key in results){
+    obj[results[key]] = key
+  }
+  arr = Object.entries(obj)
+   for (let i = arr.length-1; i >= 0; i--){
+      if (arr[i][0] >= 60) res.push(arr[i][1])
+    }   
+return res
+}
+
+
+function myLanguages(results) {
+  return Object.keys(results).filter(r => results[r] > 59).sort((a,b) => results[b] - results[a]);
+}
+
+
+function myLanguages(results) {
+  for(var i in results){
+    if(results[i]<60){
+      delete results[i];
+    }
+  }
+  return Object.keys(results).sort(function(a,b){return results[b]-results[a]})
+}
+
