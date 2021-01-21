@@ -1,0 +1,17 @@
+function checkThreeAndTwo(array) {
+let a = 0, b = 0, c = 0, arr = []
+for (let el of array){
+  if (el === 'a') a++
+  if (el === 'b') b++
+  if (el === 'c') c++
+}
+arr.push(a,b,c)
+  return arr.includes(0) && arr.includes(3)
+  }
+  
+  
+  
+  function checkThreeAndTwo(array) {
+  var [a,b,c,d,e]=[...array].sort();
+  return a!==e&&((a===b&&c===e)||(a===c&&d===e));
+}
