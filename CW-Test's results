@@ -1,0 +1,14 @@
+function testResult(array) {
+  let aver = +(array.reduce((acc, el) => acc + el) / array.length).toFixed(3)
+  let marks = {
+    h : 0,
+    a : 0,
+    l : 0,
+  }
+   let res = [aver, marks]
+   for (let el of array){
+     (el <= 6) ? marks.l++ : (el >= 7 && el <9) ? marks.a++ : marks.h++
+   }
+  if (marks.a === 0 && marks.l === 0) res.push('They did well')
+  return res
+}
