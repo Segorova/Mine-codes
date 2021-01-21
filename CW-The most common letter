@@ -1,0 +1,40 @@
+function replaceCommon(string, letter) {
+ let obj = {}, tmp, max, common_letter, new_str = ''
+  let str = string.replace(/ /g, '')
+  for (let i = 0; i < str.length; i++){
+    if (str[i] in obj) obj[str[i]]++
+    else obj[str[i]] = 1
+  }
+  tmp = Object.entries(obj);
+  max = Math.max(...Object.values(obj))
+  for (let el of tmp){
+    if (el[1] === max) {
+      common_letter = el[0]; break;
+    }
+  }
+  for (let i = 0; i < string.length; i++){
+    if (string[i] !== common_letter) new_str += string[i]
+    else new_str += letter
+  }
+  return new_str
+  }
+  
+  
+  function replaceCommon(string, letter) {
+  let obj ={};
+  let string2 = string.replace(/ /g, '')
+  for (let el of string2){
+    if(obj[el]) obj[el]++;
+    else obj[el]=1;
+  }
+  let arr = Object.entries(obj);
+  let max = arr[0][1];
+  let s = arr[0][0];
+  for(let el of arr){
+    if(el[1] > max) {
+      max=el[1]; s=el[0];
+    }
+  }
+  return string.replace(new RegExp(s, "g"), letter)
+}
+  
