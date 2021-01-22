@@ -1,0 +1,18 @@
+function nextId(ids){
+ let arr = ids.sort((a,b) => a - b)
+ let arr2 = arr.filter((el, i) => arr.indexOf(el) === i)
+  if (arr2[0] !== 0) return 0
+   for (let i = 1; i < arr2.length; i++){
+     if (i !== arr2[i] && arr2[i] !== arr2[i-1]) return i
+    } 
+  return arr2.length;
+}
+
+console.log(nextId([ 1, 2, 0, 2, 3 ])); // 4
+
+ function nextId(ids){
+  var x = 0;
+  while (ids.includes(x)) x++;
+  return x;
+}
+
