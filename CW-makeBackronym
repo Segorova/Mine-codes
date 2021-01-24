@@ -1,0 +1,8 @@
+var makeBackronym = function(string){
+string = string.toUpperCase()
+let str = ''
+  for (let i = 0; i < string.length; i++){  
+    str += dict[string[i]] + ' '
+   }
+return str.trimRight()
+}
