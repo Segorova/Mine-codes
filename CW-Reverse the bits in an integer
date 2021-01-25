@@ -1,0 +1,5 @@
+function reverseBits (n) {
+ let binary =  n.toString(2)
+ let decimal = binary.split('').reverse().join('')
+return parseInt(decimal, 2)
+}
