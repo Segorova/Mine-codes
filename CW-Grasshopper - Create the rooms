@@ -1,0 +1,17 @@
+var rooms = {
+ room1 : {
+   name : 'kitchen',
+   description : 'food',
+   completed : true,
+  },
+  room2 : {
+  name : 'bedroom',
+   description : 'bed',
+   completed : true,
+},
+ room3 : {
+   name : 'living room',
+   description : 'tv',
+   completed : true,
+  }
+}
