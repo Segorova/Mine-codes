@@ -1,0 +1,17 @@
+function solve(eq){
+   return eq.split(/\b/g).reverse().join("");
+}
+
+
+function solve(eq){
+  let op = '+-*/'
+  return  result = eq.split('')
+  .map(el=>{
+    if(op.includes(el)) return ' ' + el + ' ';
+    else return el
+  })
+  .join('')
+  .split(' ')
+  .reverse()
+  .join('');
+}
