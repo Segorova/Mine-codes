@@ -1,0 +1,4 @@
+function hydrate(s) {
+let num = s.match(/\d/g, '').map(el => +el).reduce((acc, el) => acc + el)
+return num === 1 ? '1 glass of water':`${num} glasses of water`
+}
