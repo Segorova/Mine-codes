@@ -1,0 +1,19 @@
+function killer(suspectInfo, dead) {
+  let count = 0
+  for (let key in suspectInfo) {
+    for (let el of dead){
+      if (suspectInfo[key].includes(el)) count++
+      if (count === dead.length) return key
+     }
+     count = 0
+   }
+}
+
+function killer(suspectInfo, dead) {
+  for (let name in suspectInfo) {
+    if (dead.every(deadPerson => suspectInfo[name].includes(deadPerson))) {
+      return name;
+    }
+  }
+}
+
