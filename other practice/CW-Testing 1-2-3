@@ -1,0 +1,12 @@
+var number=function(array){
+  let res = []
+  for (let i = 1; i < array.length+1; i++){
+    res.push(`${i}: ${array[i-1]}`)
+  }
+  return res
+}
+
+
+
+
+var number = (arr) => arr.map((el,i) => `${i+1}: ` + el)
