@@ -1,0 +1,10 @@
+Array.prototype.remove_ = function(integer_list, values_list){
+  for (let el of values_list){
+    if (integer_list.includes(el)) integer_list = integer_list.filter(a => a !== el)
+  }              
+return integer_list
+ }
+ 
+ 
+ 
+ 
