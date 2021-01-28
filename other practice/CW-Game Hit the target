@@ -1,0 +1,8 @@
+const solution = mtrx => {
+  for (let el of mtrx){
+    if (el.includes('>') && el.includes('x') && el.indexOf('>') < el.indexOf('x')) return true
+  }   
+return false
+}
+
+
