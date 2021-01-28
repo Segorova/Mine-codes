@@ -1,0 +1,11 @@
+function pyramid(balls) {
+  let count = 0, rem = balls
+   for (let i = 1; i <= balls; i++){
+      rem = rem - i
+      count++
+       if(rem < 0) return count-1  
+   }
+}
+  
+
+console.log(pyramid(2211)); 
