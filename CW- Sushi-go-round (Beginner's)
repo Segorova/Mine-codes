@@ -1,0 +1,4 @@
+function totalBill(str) {
+ let a = str.replace(/\s/g, '').length
+  return a < 5 ? a * 2 : a * 2 - Math.floor(a / 5) * 2
+}
