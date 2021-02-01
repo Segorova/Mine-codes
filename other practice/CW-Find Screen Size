@@ -1,0 +1,6 @@
+function findScreenHeight(width, ratio) {
+let arr = ratio.split(':').map(el => +el)
+return `${width}x${(width/arr[0])*arr[1]}`
+}
+
+
