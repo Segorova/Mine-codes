@@ -1,0 +1,4 @@
+function orderNumberOfDifferentValue(a, b, c){
+  return (a === b)? 3 : (a === c)? 2 : 1
+}
+console.log(orderNumberOfDifferentValue(5,3,5));
