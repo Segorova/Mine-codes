@@ -1,0 +1,4 @@
+function  calculateAge(a,b) {
+  if (Math.abs(a-b) === 1) return ((b-a) > 0)? `You are ${b-a} year old.` : `You will be born in ${a-b} year.`
+  return ((b-a) > 0)? `You are ${b-a} years old.` : (a===b)? 'You were born this very year!':`You will be born in ${a-b} years.`
+}
