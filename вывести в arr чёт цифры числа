@@ -1,0 +1,19 @@
+function foo(num){
+let arr = [], el = 0
+ do {
+   el = num % 10
+    if (el % 2 === 0) arr.unshift(el)
+    num = Math.trunc(num/10)
+ }while(Math.trunc(num)>0)
+  return arr
+}
+console.log(foo(3256456845)); 
+
+
+********* с использованием методов массивов   ***************
+
+function foo(num){
+ let arr = String(num).split('').map(el => +el).filter(el => el % 2 === 0)  
+return arr
+}
+console.log(foo(3256456845));
