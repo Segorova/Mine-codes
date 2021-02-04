@@ -1,0 +1,10 @@
+function mxdiflg(a1, a2) {
+  if (a1.length === 0 || a2.length === 0) return -1
+  let a1_length = a1.map(el => el.length)
+  let a2_length = a2.map(el => el.length)
+  let max1 = Math.max(...a1_length)
+  let max2 = Math.max(...a2_length)
+  let min1 = Math.min(...a1_length)
+  let min2 = Math.min(...a2_length)
+  return ((max1 - min2) > (max2 - min1))? max1 - min2 : max2 - min1
+}
