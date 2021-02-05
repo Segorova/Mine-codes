@@ -1,0 +1,8 @@
+const doubleInteger = i => 2 * i;
+
+
+*******
+
+function doubleInteger(i) {
+  return i * 2;
+}
