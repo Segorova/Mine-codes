@@ -1,0 +1,16 @@
+var calculate = function calculate(a, o, b) {
+  if ( o === "/" && b === 0) return null
+  switch (o) {
+    case "+" : return a + b;
+    case "-" : return a - b;
+    case "*" : return a * b;
+    case "/" : return a / b;
+    default  : return null
+  }
+}
+
+**************************************
+
+var calculate = function calculate(a, o, b) {
+  return o == "+" ? a + b : o == '-' ? a - b : o == '*' ? a * b : b == 0 ? null : a / b;
+}
