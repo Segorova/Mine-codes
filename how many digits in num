@@ -1,0 +1,4 @@
+function numberDescription(num){
+let l = String(num).length
+return `${l == 1? 'one': l == 2? 'two':'three'}-digit number`
+}
