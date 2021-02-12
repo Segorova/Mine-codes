@@ -1,0 +1,7 @@
+function perfectRoots(n){
+return Number.isInteger(Math.sqrt(Math.sqrt(Math.sqrt(n))))
+}
+
+function perfectRoots(n){
+return Number.isInteger(n ** (1/8))
+}
