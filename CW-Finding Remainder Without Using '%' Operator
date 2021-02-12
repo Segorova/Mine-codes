@@ -1,0 +1,5 @@
+function remainder(D, d) {
+return D - (d * Math.trunc(D/d))
+}
+
+
