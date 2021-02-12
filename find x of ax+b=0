@@ -1,0 +1,3 @@
+function equation(a, b){
+return -b/a
+}
