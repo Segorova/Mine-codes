@@ -1,0 +1,3 @@
+function costOfSweets(x, y, cost){
+return (cost/x) * y
+}
