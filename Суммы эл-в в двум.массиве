@@ -1,0 +1,4 @@
+function sumsInArray(arr){
+return arr.map(el => el.reduce((acc,a) => acc+a))
+}
+
