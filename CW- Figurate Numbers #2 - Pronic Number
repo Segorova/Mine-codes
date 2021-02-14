@@ -1,0 +1,19 @@
+function isPronic(n){
+  let res = 0
+  for (let i = 0; res <= n; i++) {
+    res = i * (i+1)
+    if(res === n) return true
+  } 
+return false
+}
+
+******************************************
+
+function isPronic(n){
+  for (var i = 0; i <= n; i++) {
+    if ((i * (i + 1)) === n) return true;
+  }
+  
+  return false;
+}
+
