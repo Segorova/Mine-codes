@@ -1,0 +1,7 @@
+function starTriangle(n){
+  let res = ''
+    for (let i = 1; i < n; i++) {
+      res += '*'.repeat(i) + '\n'
+    }
+  return res += '*'.repeat(n)
+}
