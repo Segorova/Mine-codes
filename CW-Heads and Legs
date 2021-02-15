@@ -1,0 +1,15 @@
+function animals(heads, legs){
+  let cows = (legs-2*heads)/2  
+  let chickens = heads - cows
+  return (Number.isInteger(chickens) && Number.isInteger(cows) && chickens >= 0 && cows>= 0) ? [chickens, cows] : "No solutions"
+}
+
+************************
+
+function animals(heads, legs){
+  var cows = legs%2 ? -1 : legs/2-heads;
+  return heads>=cows && cows>=0 ? [heads-cows, cows] : "No solutions";
+}
+
+****************************************
+
