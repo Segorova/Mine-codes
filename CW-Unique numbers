@@ -1,0 +1,10 @@
+function uniqueNumbers(numbersArray) {
+  return numbersArray.filter((el,i) => numbersArray.indexOf(el) === i)
+}
+
+
+********************************
+
+function uniqueNumbers(numbersArray) {
+  return [...new Set(numbersArray)];
+}
