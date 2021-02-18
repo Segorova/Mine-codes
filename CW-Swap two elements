@@ -1,0 +1,28 @@
+function swapTwo(array, a, b) {
+  let res = []
+    for (let i = 0; i < array.length; i++) {
+      if (i === array.indexOf(a)) res.push(b)
+      else if (i === array.lastIndexOf(b)) res.push(a)
+      else res.push(array[i])
+     }
+return res
+}
+
+***************************************************************
+
+function swapTwo(array, a, b) {
+  const i = array.indexOf(a);
+  const j = array.lastIndexOf(b);
+  return array.map((x, idx) => idx == i ? b : idx == j ? a : x);
+}
+
+*************************************************************
+
+function swapTwo(arr, a, b) {
+  let arr1 = arr.slice()
+  let indA = arr.indexOf(a);
+  let indB = arr.lastIndexOf(b);
+  arr1[indA] = b;
+  arr1[indB] = a;
+  return arr1;
+}
