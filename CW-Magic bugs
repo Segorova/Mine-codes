@@ -1,0 +1,9 @@
+function magic(input)
+{
+  if (input === undefined){
+    return {"bar":"hello"}
+  }
+  else{
+    return{"bar":"world"}
+  }
+}
