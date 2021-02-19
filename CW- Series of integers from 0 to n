@@ -1,0 +1,20 @@
+function generateIntegers(n) {
+  let arr = []
+  for (let i = 0; i <= n; i++) {
+    arr.push(i)
+  }
+  return arr
+}
+
+************************
+
+function generateIntegers(n) {
+  return [...Array(n + 1)].map((_, i) => i)
+}
+
+*******************************
+
+let generateIntegers = (n) => [...Array(n+1).keys()]
+
+*****************************
+
