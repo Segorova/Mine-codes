@@ -1,0 +1,3 @@
+function sumOfTwoLargest(a, b, c){
+return a>c && b>c ? a+b : a>b && c>b ? a+c : b+c
+}
