@@ -1,0 +1,19 @@
+function arithmeticSequenceElements(a,r,n) {
+  let res = [], count = 0, i = 0
+  do {
+    res.push(a+i)
+    i += r
+    count++
+  } while (count <= n-1)  
+  return res.join(', ')
+}
+
+********************************
+
+function arithmeticSequenceElements(a,r,n) {
+  let arr = [a]; 
+  for (let i = 0; i < n - 1; i++)  {
+    arr.push(arr[i]+r);
+  }
+  return arr.join(', ');
+}
