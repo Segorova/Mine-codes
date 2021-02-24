@@ -1,0 +1,13 @@
+function spoonerize(words) {
+let arr = words.split(' ')
+let str1 = arr[0].replace(arr[0][0],arr[1][0])
+let str2 = arr[1].replace(arr[1][0],arr[0][0])
+return str1 + ' ' + str2
+}
+
+**************************************
+
+function spoonerize(words) {
+    let word = words.split(' ')
+    return [word[1][0] + word[0].slice(1), word[0][0] + word[1].slice(1)].join(' ')
+}
