@@ -1,0 +1,7 @@
+function sorting(a){
+let arr = a.split(',')
+let res = arr.sort(([a,b],[c,d] ) => d - b ).sort(([a,b], [c,d]) => {
+      return b === d && a.length === c.length ? -1 : 0;});
+return arr
+}
+  console.log(sorting('William,Willaim,Olivia,Olivai,Lily,Lyli'));
