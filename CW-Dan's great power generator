@@ -1,0 +1,10 @@
+function danspower(num, power) {
+let res = Math.pow(num, power)
+if (res % 2 === 0) return res
+  else
+return (res % 10 >= 5) ? (Math.trunc(res/10)+1)*10 : (Math.trunc(res/10))*10
+}
+
+********************************************
+
+const danspower = (n, p) => n ** p % 2 ? Math.round(n ** p / 10) * 10 : n ** p;
