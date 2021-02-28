@@ -1,0 +1,4 @@
+function maxRectangleSquare(arr){
+let arr2 = arr.map(el => el[0]*el[1])
+return arr.length == 0 ? null : Math.max(...arr2)
+}
