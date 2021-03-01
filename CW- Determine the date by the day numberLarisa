@@ -1,0 +1,13 @@
+function getDay(day, isLeap){
+let arr = isLeap ? [31,60,91,121,152,182,213,244,274,305,335,366]:[31,59,90,120,151,181,212,243,273,304,334,365] 
+let monthes = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+  for (let i = 0; i < arr.length; i++) {
+    if (day <= arr[i]) return `${monthes[i]}, ${day - (day>31? arr[i-1]:0)}`
+  }
+}
+*********************************
+
+function getDay(day, isLeap) {
+  const data = new Date(isLeap ? 2020 : 2021, 0, day);
+  return `${data.toLocaleString("en-US", { month: "long" })}, ${data.getDate()}`;
+}
