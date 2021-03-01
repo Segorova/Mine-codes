@@ -1,0 +1,14 @@
+function getStrings(city){
+  let obj = {}
+  city = city.toLowerCase().replace(/\s/g,"")
+  for (let letter of city) {
+    if (letter in obj) {
+      obj[letter]+= '*'
+    } else{
+       obj[letter] = '*'
+    }
+  }
+  return Object.entries(obj).map(el => el[0]+":"+el[1]).join(',')
+}
+*****************************************
+
