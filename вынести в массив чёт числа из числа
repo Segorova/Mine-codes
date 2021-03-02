@@ -1,0 +1,19 @@
+function evenDigits(n){
+  let arr = []
+  let el = 0
+    do {
+      el = n % 10
+      if (el % 2 === 0) arr.unshift(el)
+      n = Math.trunc(n / 10)
+      } while(n > 0)       
+  return arr;
+}
+
+***********************************************
+
+function evenDigits(n){
+let arr = String(n).split('').map(el => +el).filter(el => el % 2 === 0)
+  return arr;
+}
+
+console.log(evenDigits(12345));//   должна возвратить [2,4]
