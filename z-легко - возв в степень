@@ -1,0 +1,3 @@
+function power(num, n){
+return Math.pow(num, n)
+}
