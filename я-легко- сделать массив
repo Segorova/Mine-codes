@@ -1,0 +1,7 @@
+function createArray(n){
+let res = []
+for (let i = 1; i <= n; i++) {
+res.push(10*i)
+}
+return res
+}
