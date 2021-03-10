@@ -1,0 +1,4 @@
+function sumOfTwoLargest(a, b, c){
+let min = Math.min(a, b, c)
+return min === a ? b + c : min === b ? a + c : a + b 
+}
