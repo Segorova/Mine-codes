@@ -1,0 +1,6 @@
+function wordsInColumn(text){
+let arr = text.split(' ')
+let arr1 = text.split(' ').map(el => el.length)
+let l = Math.max(...arr1)
+return arr.map(el => el.padStart(l, ' ')+'\n').join('').trimRight()
+}
