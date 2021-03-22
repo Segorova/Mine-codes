@@ -1,0 +1,15 @@
+function isDigit(letter){
+return letter >= 0 || letter <= 9 ? "digit" : "not a digit"  //  Символы, содержащие цифры, больше или равны "0" и меньше или равны "9".
+}
+
+***********
+
+function isDigit(letter){
+return Number.isNaN(+letter)?"not a digit": "digit" 
+}
+
+**************
+
+function isDigit(letter){
+return parseInt(+letter, 10) >= 0 ? "digit" : "not a digit"
+}
