@@ -1,0 +1,7 @@
+function powerOf3(n){
+let rem = n
+while (rem > 3){
+  rem = rem / 3
+}
+  return rem === 3 || n === 1
+}
