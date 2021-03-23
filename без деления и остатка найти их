@@ -1,0 +1,9 @@
+function quotientAndRemainder(n, k){
+let quotient = 0, remainder = n
+while (remainder >= k){
+  quotient++
+  remainder = n - k
+  n = n - k
+}
+return [quotient, remainder]
+}
