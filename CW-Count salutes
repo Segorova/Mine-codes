@@ -1,0 +1,11 @@
+function countSalutes(hallway) {
+  let arr = hallway.split('')
+  let count = 0
+    for (let i = 0; i < arr.length; i++){
+      if(arr[i] === '>') {
+        for (let j = i+1; j < arr.length; j++){
+          if(arr[j] === '<') count++
+      }}
+   }
+  return count * 2 
+}
