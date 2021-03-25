@@ -1,0 +1,7 @@
+function sumsInArray(arr){
+let res = []
+for (let i = 0; i < arr.length; i++){
+  res[i] = arr[i].reduce((acc, cur) => acc + cur)
+}
+  return res
+}
