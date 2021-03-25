@@ -1,0 +1,17 @@
+function olympicRing(a){
+  let arr = ['A','D','O','P','Q','R','o','p','a','b','d','e','g','q']  
+  let count = 0
+    for (let i = 0; i < a.length; i++) {
+      if (arr.includes(a[i])) count++
+      if (a[i] === 'B') count += 2
+    }
+  let sc = Math.floor(count / 2)
+  return sc > 3 ? 'Gold!' : sc === 3 ?  'Silver!' : sc === 2 ? 'Bronze!' : 'Not even a medal!'
+}
+
+********************************************  !!!!!!!!!!!!!!!!!!!
+
+const olympicRing = (str) =>{
+  const out = [...str].map(el => 'qeopadgbQROPAD'.includes(el) ? 1 : el === 'B' ? 2 : 0).reduce((a, b)=> a+b, 0) / 2 
+  return out < 2 ? 'Not even a medal!' : out < 3 ? 'Bronze!' : out < 4 ? 'Silver!' : 'Gold!'
+}
