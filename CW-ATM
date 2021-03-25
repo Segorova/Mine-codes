@@ -1,0 +1,11 @@
+function solve(n) {
+let  arr = [500, 200, 100, 50, 20, 10]
+let count = 0
+  for (let i = 0; i < arr.length; i++){
+     while (n >= arr[i]){
+       n = n - arr[i]
+       count++
+     }
+  }
+  return n === 0 ? count : -1
+}
