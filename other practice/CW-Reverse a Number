@@ -1,0 +1,11 @@
+function reverseNumber(n) {
+ let rev = +String(Math.abs(n)).split('').reduceRight((acc, el) => acc + el)
+return n < 0 ? rev * -1 : rev
+}
+*******************************************
+function reverseNumber(n) {
+  return +[...(""+Math.abs(n))].reverse().join("")*(n<0 ? -1:1);
+}
+********************************************
+
+const reverseNumber = n => Math.sign(n) * (Math.abs(n)+'').split('').reverse().join('');
