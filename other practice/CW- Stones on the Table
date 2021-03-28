@@ -1,0 +1,28 @@
+function solve(stones) {
+  let count = 0, symb = stones[0]
+    for (let i = 1; i < stones.length; i++){
+      if(symb === stones[i]) count++
+      else symb = stones[i]
+    }
+  return count;
+}
+
+****************************
+function solve(stones) {
+  let output = 0;
+  
+  for(let i=0; i<stones.length-1; i++){
+    if(stones[i] === stones[i+1]) output++;
+  }
+  
+  return output;
+}
+****************************
+
+function solve(stones) {
+  return stones.split('').reduce((res,val,i) => val === stones[i+1] ? ++res : res,0)
+}
+*****************************
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+const solve = stones => stones.length - stones.replace(/(\w)(?=\1)/g, ``).length
