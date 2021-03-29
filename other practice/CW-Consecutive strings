@@ -1,0 +1,15 @@
+function longestConsec(str, k) {
+  if (str.length === 0 || k > str.length || k <= 0) return "" 
+  let arr = [], el, max = 0, res
+  for (let i = 0; i < str.length; i++){
+     el = str.slice(i, i+k).join('')
+      arr[i] = [el, el.length]
+      if (el.length > max) max = el.length
+    }
+   for (let j = 0; j < arr.length; j++){
+     if (arr[j][1] === max) return arr[j][0]
+   }
+}
+
+************************************************************
+
