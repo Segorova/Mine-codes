@@ -1,0 +1,17 @@
+const divisions = (n, divisor) => {
+  let count = 0
+  while (n >= divisor){
+    n = Math.trunc(n/divisor)
+    count++
+  }
+  return count
+}
+
+***************************
+
+const divisions = (n, divisor) => {
+  return Math.floor(Math.log(n)/Math.log(divisor))
+};
+
+**********************************
+
