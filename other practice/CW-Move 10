@@ -1,0 +1,20 @@
+function moveTen(s){
+  let res = '', ind = 0
+  let alph = 'abcdefghijklmnopqrstuvwxyzabcdefghijk'
+    for (let i = 0; i < s.length; i++){
+       ind = alph.indexOf(s[i])+10
+       res += alph[ind]
+    }   
+  return res
+}
+
+*******************************
+
+function moveTen(s) {
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  let move10 = 'klmnopqrstuvwxyzabcdefghij';
+  return s.replace(/[a-z]/g, x => move10[alphabet.indexOf(x)]);
+}
+
+*************************************
+
