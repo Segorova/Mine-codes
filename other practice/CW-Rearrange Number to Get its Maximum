@@ -1,0 +1,4 @@
+var maxRedigit = function(num) {
+return num > 99 ? +String(num).split('').sort((a,b) => b-a).join(''): null
+};
+console.log(maxRedigit(231));//321
