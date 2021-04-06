@@ -1,0 +1,17 @@
+function isVow(a){
+ return a.map(el => 'aeiou'.includes(String.fromCharCode(el)) ? String.fromCharCode(el) : el)
+}
+*************************
+function isVow(array){
+  return array.map(x => 'aeiou'.includes(y = String.fromCharCode(x)) ? y : x)
+}
+
+*****************************************
+
+const v={"97":"a","101":"e","105":"i","111":"o","117":"u"}
+const isVow=a=>a.map(x=>v[x]||x)
+
+***************************
+function isVow(a){
+  return a.map(i => [97, 101, 105, 111, 117].includes(i) ? String.fromCharCode(i) : i);
+}
