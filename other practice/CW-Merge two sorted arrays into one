@@ -1,0 +1,11 @@
+function mergeArrays(arr1, arr2) {
+    let arr = arr1.concat(arr2)
+  return arr.sort((a, b) => a - b).filter((el, i) => arr.indexOf(el) == i)
+}
+*******************************************
+
+function mergeArrays(a, b) {
+  return [...new Set(a.concat(b))].sort((a,b)=>a-b)
+}
+**************************************
+
