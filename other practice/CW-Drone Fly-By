@@ -1,0 +1,5 @@
+function flyBy(l, d){
+ return l.length > d.length ? 'o'.repeat(d.length)+'x'.repeat(l.length - d.length):'o'.repeat(l.length)
+}
+*************************
+flyBy=(a,b)=>('o'.repeat(b.length)+a).slice(0,a.length)
