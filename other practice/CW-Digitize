@@ -13,4 +13,4 @@ function digitize(n) {
 }
 *********************************
 
-const digitize = n => Array.from(String(n), e => Number(e));
+const digitize = n => Array.from(String(n), e => Number(e));// СОЗДАНИЕ НОВОГО ARRAY 
