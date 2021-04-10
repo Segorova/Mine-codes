@@ -7,3 +7,10 @@ function digitize(n) {
   return res
 }
 
+**************************
+function digitize(n) {
+  return String(n).split('').map(Number);
+}
+*********************************
+
+const digitize = n => Array.from(String(n), e => Number(e));
