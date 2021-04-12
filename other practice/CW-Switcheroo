@@ -1,0 +1,25 @@
+function switcheroo(x){
+  return x.split('').map(el => el === 'a' ? 'b' : el === 'b' ? 'a' : 'c').join('')
+}
+
+************************
+
+function switcheroo(x){
+  let res = ''
+  for (let i = 0; i < x.length; i++){
+    if(x[i] === 'a') res += 'b'
+    if(x[i] === 'b') res += 'a'
+    if(x[i] === 'c') res += 'c'
+  }
+  return res
+}
+console.log(switcheroo('aaabcccbaaa'))
+                                       // , 'bbbacccabbb'
+**********************************
+
+function switcheroo(x){
+  return [...x].map(v => v == 'a' ? v = 'b' : v == 'b' ? v = 'a' : v).join('');
+}
+
+*****************************************
+
