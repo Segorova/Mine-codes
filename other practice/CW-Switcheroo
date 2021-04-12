@@ -22,4 +22,10 @@ function switcheroo(x){
 }
 
 *****************************************
-
+str => str.replace(/./g, x => {
+    switch(x) {
+      case 'a': return 'b';
+      case 'b': return 'a';
+      default: return x;
+    }
+  })
