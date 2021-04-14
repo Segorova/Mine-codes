@@ -23,3 +23,6 @@ const alternateCase = function(s) {
 
 **************************************
 
+function alternateCase(s) {
+  return s.replace(/([a-z])|[A-Z]/g,(a,b)=>b?a.toUpperCase():a.toLowerCase());
+}
