@@ -1,0 +1,12 @@
+function alternateCase(s) {
+  let alph = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  let res = ''
+  for (let i = 0; i < s.length; i++){
+    if (alph.includes(s[i]) && s[i] === s[i].toLowerCase()) res += s[i].toUpperCase()
+    else if (alph.includes(s[i]) && s[i] === s[i].toUpperCase()) res += s[i].toLowerCase()
+    else res += s[i]
+  }
+  return res;
+}
+******************************************
+
