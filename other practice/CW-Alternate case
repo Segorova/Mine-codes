@@ -16,3 +16,10 @@ function alternateCase(s) {
   }).join('');
 }
 *************************************
+const alternateCase = function(s) {
+  const turn = x => x === x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()
+  return [...s].map(el => turn(el)).join('')
+}
+
+**************************************
+
