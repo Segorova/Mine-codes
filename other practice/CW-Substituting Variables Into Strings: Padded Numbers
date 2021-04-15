@@ -15,3 +15,6 @@ return 'Value is ' + String(value).padStart(5, '0')
 
 *************************************
 
+function solution(value){
+  return "Value is " + ("0000"+value).slice(-5);
+}
