@@ -1,0 +1,11 @@
+function solution(value){
+let str = 'Value is ', s = String(value)
+  for (let i = 0; i < 5 - s.length; i++){
+    str += '0'
+  }
+  return str + s
+}
+
+console.log(solution(109)); // , ,"Value is 00109"
+
+
