@@ -1,0 +1,10 @@
+function countName(anArr, name){
+let obj = {}
+for (let i = 0; i < anArr.length; i++) {
+  if(anArr[i] in obj) obj[anArr[i]]++
+  else obj[anArr[i]] = 1
+}
+  return obj[name]
+};
+
+************************************
