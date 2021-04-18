@@ -13,3 +13,4 @@ function numericalTable(n){
 
 
 console.log(numericalTable(18) );
+console.log(numericalTable(19));
