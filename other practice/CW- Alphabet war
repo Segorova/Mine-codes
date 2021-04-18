@@ -11,4 +11,4 @@ function alphabetWar(fight){
    return (res === 0) ? "Let's fight again!": (res > 0)? "Left side wins!":"Right side wins!"
 }
 
-
+console.log(alphabetWar(fight));
