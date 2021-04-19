@@ -10,3 +10,14 @@ return r.filter((el,i) => r.indexOf(el) === i).sort()
 
 *******************************************
 
+function inArray(a1, a2) {
+  var str = a2.join(' ');
+  return a1.filter(s => str.indexOf(s) !== -1).sort();
+}
+
+
+console.log(inArray(["xyz", "live", "strong"],["lively", "alive", "harp", "sharp", "armstrong"]));
+
+//        ["live", "strong"]
+
+********************************************************
