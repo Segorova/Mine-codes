@@ -3,3 +3,9 @@ function validSpacing(s) {
   return s !== '' ? arr.length - arr.filter(el => el.length > 0).length === 0 : true
 }
 
+*******************************
+
+function validSpacing(s) {
+  if (s === '') return true
+  return !s.split(' ').includes('')
+}
