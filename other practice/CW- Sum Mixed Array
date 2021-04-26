@@ -11,3 +11,4 @@ function sumMix(x){
 }
 
 console.log(sumMix([1, '5', 2,'8', 3,'9', 4]));
+console.log(sumMix([17, '56', 23,'82', 31,'95', 49]));
