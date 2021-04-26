@@ -9,3 +9,5 @@ function sumMix(x){
   }
   return result;
 }
+
+console.log(sumMix([1, '5', 2,'8', 3,'9', 4]));
