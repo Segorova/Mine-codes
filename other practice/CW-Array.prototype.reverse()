@@ -26,3 +26,8 @@ Array.prototype.reverse = function() {
   }
   return this;
 };
+*****************************************
+
+Array.prototype.reverse = function() {
+  return this.map((item,idx) => this[this.length-1-idx])
+};
