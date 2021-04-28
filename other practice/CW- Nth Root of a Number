@@ -8,3 +8,5 @@ return Math.pow(x, 1/n)
 var root = function(x, nth){
 return x**(1/nth)
 }
+
+console.log(root(10,2));
