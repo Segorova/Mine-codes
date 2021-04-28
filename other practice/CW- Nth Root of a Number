@@ -10,3 +10,4 @@ return x**(1/nth)
 }
 
 console.log(root(10,2));
+console.log(root(10,3));
