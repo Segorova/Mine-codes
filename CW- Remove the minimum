@@ -4,3 +4,4 @@ function removeSmallest(numbers) {
   numbers.splice(numbers.indexOf(min), 1);
   return numbers;
 }
+console.log([1,2,3]);
