@@ -8,3 +8,4 @@ let max = arr[0].length, word= arr[0]
 }
   return word
 }
+console.log(['sveta','svetlana']);
