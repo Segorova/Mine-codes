@@ -7,3 +7,4 @@ function powOf3(n){
   }
   return i-2;
 }
+console.log(8);
