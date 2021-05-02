@@ -6,3 +6,4 @@ while (rem > 3){
   return rem === 3 || n === 1
 }
 console.log(54546);
+console.log(78);
