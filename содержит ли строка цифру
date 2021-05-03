@@ -13,4 +13,6 @@ return Number.isNaN(+letter)?"not a digit": "digit"
 function isDigit(letter){
 return parseInt(+letter, 10) >= 0 ? "digit" : "not a digit"
 }
-console.log('23kjkjl);
+console.log('23kjkjl');
+console.log('');
+
