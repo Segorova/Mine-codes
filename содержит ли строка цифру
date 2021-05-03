@@ -15,4 +15,4 @@ return parseInt(+letter, 10) >= 0 ? "digit" : "not a digit"
 }
 console.log('23kjkjl');
 console.log('');
-
+console.log('lkjkjkllcf');
