@@ -6,3 +6,9 @@ Array.prototype.only = function(keys){
     }
   return arr
 }
+***************************************
+
+Array.prototype.only = function(k) {
+  return this.filter((e, i) => k.includes(i));
+}
+***************************************
