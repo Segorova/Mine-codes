@@ -1,0 +1,4 @@
+String.prototype.camelCase=function(){
+ let s = this.trimLeft().trimRight()
+  return this.length > 0 ? s.split(' ').map(el => el[0].toUpperCase()+ el.slice(1)).join('') : ''
+}
