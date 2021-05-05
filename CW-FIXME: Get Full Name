@@ -1,0 +1,8 @@
+class Dinglemouse{
+  constructor( firstName, lastName ){
+    this.name = firstName+" "+lastName
+  }  
+  getFullName(){
+    return this.name.trimRight().trimLeft()
+  }
+}
