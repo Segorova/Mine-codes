@@ -1,0 +1,5 @@
+function numbers(){
+  return [...arguments].every(el => typeof(el) === 'number')
+}
+**************************
+
