@@ -13,3 +13,4 @@ function animals(heads, legs){
 
 ****************************************
 
+console.log(animals(25,3));
