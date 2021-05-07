@@ -15,3 +15,4 @@ function animals(heads, legs){
 
 console.log(animals(25,3));
 console.log(animals(125,35));
+console.log(animals(250,30));
