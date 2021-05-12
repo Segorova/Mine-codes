@@ -1,0 +1,8 @@
+var Calculator = {
+ average: function() {
+   const arr = Array.from(arguments)
+   return arr.length === 0 ? 0 : arr.reduce((acc, el) => acc + el) / arr.length
+ }
+};
+*****************************************************
+
