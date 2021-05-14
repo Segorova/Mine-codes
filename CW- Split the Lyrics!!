@@ -1,3 +1,4 @@
 function lyricSplit(lyric) {
   return lyric.split(' ')
 }
+console.log('kklkj');
