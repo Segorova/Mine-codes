@@ -16,3 +16,13 @@ function add() {
 }
 ************************************
 
+function add(...args) {
+  let sum = 0;
+
+  for (let i = 0; i < args.length; i++) {
+    args[i] = args[i] * (i + 1);
+    sum += args[i];
+  }
+  return sum;
+  
+}
