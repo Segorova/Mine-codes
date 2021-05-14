@@ -1,0 +1,5 @@
+function add(...args) {
+ return args.length > 0 ? args.map((el,i) => el * (i+1)).reduce((acc,el) => acc + el) : 0
+}
+console.log(add(1,2,3));//; //=> 14
+***********************************
