@@ -1,5 +1,18 @@
 function add(...args) {
  return args.length > 0 ? args.map((el,i) => el * (i+1)).reduce((acc,el) => acc + el) : 0
 }
+
+
 console.log(add(1,2,3));//; //=> 14
+
+
 ***********************************
+function add() {
+  for (var n = 0, i = 0; i < arguments.length; i++) {
+    n += arguments[i] * (i + 1)
+  }
+  
+  return n
+}
+************************************
+
