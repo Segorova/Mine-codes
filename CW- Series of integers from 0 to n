@@ -17,4 +17,4 @@ function generateIntegers(n) {
 let generateIntegers = (n) => [...Array(n+1).keys()]
 
 *****************************
-
+console.log(generateIntegers(5) );
