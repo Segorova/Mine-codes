@@ -18,3 +18,4 @@ let generateIntegers = (n) => [...Array(n+1).keys()]
 
 *****************************
 console.log(generateIntegers(5) );
+console.log(generateIntegers(8) );
