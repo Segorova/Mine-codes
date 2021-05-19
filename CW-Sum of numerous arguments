@@ -1,0 +1,12 @@
+function findSum(...args){
+  if (!args.length) return 0
+  if (!args.every(el => el >= 0)) return -1
+  return args.reduce((acc, el) => acc + el)
+}
+
+*****************************************
+console.log(findSum(1,3,5));// , 9
+console.log(findSum(1,-2,4) );//  , -1
+console.log((findSum());// 0
+
+**************************************
