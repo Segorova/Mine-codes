@@ -1,0 +1,3 @@
+function objectType(obj) { //if no arguments are passed, defaults to null
+  return arguments.length > 0 ? Object.prototype.toString.call(obj) : '[object Null]';
+}
